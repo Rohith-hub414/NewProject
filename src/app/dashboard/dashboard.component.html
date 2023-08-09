@@ -1,0 +1,25 @@
+<button class="btn btn-primary home-button" (click)="navigateTo()">
+  Back to Home
+</button>
+<div class="table-container">
+  <h2>Dashboard:</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Phone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let detail of details">
+        <td>{{ detail.name }}</td>
+        <td>{{ detail.age }}</td>
+        <td>{{ detail.phn }}</td>
+        <td>{{ detail.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
